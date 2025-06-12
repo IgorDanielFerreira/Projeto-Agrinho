@@ -1,10 +1,231 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <header></header>
-    <footer></footer>
-  </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto Campo e Cidade</title>
+    <!-- Link para o seu arquivo de estilos customizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animação de Início (opcional, pode remover se não quiser) -->
+    <div class="animacao-inicio">
+        <p>Meu Projeto</p>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="#inicio">Meu Projeto</a>
+        </div>
+        <nav class="navegacao">
+            <ul class="navegacao__links">
+                <li class="links__item"><a href="#secao-um">Seção Um</a></li>
+                <li class="links__item"><a href="#secao-dois">Seção Dois</a></li>
+                <li class="links__item"><a href="#secao-tres">Seção Três</a></li>
+                <li class="links__item" id="menu-secoes">
+                    <p>Mais Seções</p>
+                    <ul class="item__menu">
+                        <li class="menu__secao"><a href="#secao-quatro">Seção Quatro</a></li>
+                        <li class="menu__secao"><a href="#secao-cinco">Seção Cinco</a></li>
+                        <li class="menu__secao"><a href="#secao-seis">Seção Seis</a></li>
+                    </ul>
+                </li>
+                <li class="links__item"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+
+        <!-- Seção Um - "Primeira Seção" -->
+        <section id="secao-um" class="primeira-secao">
+            <div class="primeira-secao__conteudo">
+                <h2>Nossa Conexão Campo e Cidade</h2>
+                <p>
+                    Explore a harmonia entre o campo e a cidade, celebrando as culturas, inovações e a importância dessa conexão para o futuro sustentável. Esta seção abordará a introdução e o objetivo principal do projeto.
+                </p>
+                <p>
+                    Aqui, você pode adicionar mais detalhes sobre a proposta do seu site, seus objetivos para o concurso e a relevância do tema "Festejando a conexão campo cidade". Utilize imagens da sua pasta `assets/images` para enriquecer o conteúdo.
+                </p>
+                <!-- Imagem Placeholder para a Primeira Seção -->
+                <img src="assets/images/banner-04.png" alt="Cena do Campo e da Cidade">
+            </div>
+        </section>
+
+        <!-- Seção Dois - "Segunda Seção" -->
+        <section id="secao-dois" class="segunda-secao">
+            <div class="segunda-secao__conteudo">
+                <h2>Benefícios e Desafios</h2>
+                <h3>A importância da união</h3>
+                <h4>Benefícios da Integração</h4>
+                <p>
+                    A integração entre campo e cidade traz inúmeros benefícios, como o fornecimento de alimentos frescos, o intercâmbio cultural e o desenvolvimento de novas tecnologias que beneficiam ambos os ambientes. Promovemos a valorização do agricultor e o acesso a produtos orgânicos e sustentáveis.
+                </p>
+                <h4>Desafios a Superar</h4>
+                <p>
+                    Apesar dos benefícios, existem desafios a serem enfrentados, como a infraestrutura de transporte, a distribuição justa de recursos e a sustentabilidade ambiental. Nosso projeto busca soluções para mitigar esses problemas e fortalecer essa parceria essencial.
+                </p>
+                <!-- Ícone Placeholder para a Segunda Seção -->
+                <img src="assets/icons/icone-desafios.svg" alt="Ícone de Desafios">
+            </div>
+        </section>
+
+        <!-- Seção Três - "Terceira Seção" -->
+        <section id="secao-tres" class="terceira-secao">
+            <div class="terceira-secao__conteudo">
+                <h2>Projetos e Iniciativas</h2>
+                <ul class="terceira-secao__conteudo__blocos">
+                    <li>
+                        <h4>Hortas Urbanas</h4>
+                        <p>
+                            Iniciativas que transformam espaços urbanos em áreas produtivas, conectando moradores com a natureza e a fonte de seus alimentos. Promovem a segurança alimentar e o bem-estar comunitário.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Feiras de Produtos Orgânicos</h4>
+                        <p>
+                            Feiras que aproximam produtores rurais de consumidores urbanos, incentivando o consumo consciente e a valorização do trabalho no campo. Um elo direto entre quem produz e quem consome.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Educação Ambiental</h4>
+                        <p>
+                            Programas educacionais que ensinam sobre sustentabilidade e a importância da preservação do meio ambiente, tanto no campo quanto na cidade. Conscientização para um futuro mais verde.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Tecnologia no Campo</h4>
+                        <p>
+                            Inovações tecnológicas que otimizam a produção agrícola, tornando-a mais eficiente e sustentável. Da automação à análise de dados, a tecnologia impulsiona o agronegócio.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Quatro - "Quarta Seção" -->
+        <section id="secao-quatro" class="quarta-secao">
+            <div class="quarta-secao__conteudo">
+                <div>
+                    <h2>A Horta na Escola</h2>
+                    <h3>Iniciativas sustentáveis para o aprendizado e a comunidade.</h3>
+                </div>
+                <ul class="quarta-secao__conteudo__blocos">
+                    <li>
+                        <h4>Plantio e Cultivo</h4>
+                        <ul>
+                            <li><img id="imagem-horta-01" src="assets/images/horta-01.png" alt="Plantio de Sementes"><p>Sementes e Mudas</p></li>
+                            <li><img id="imagem-horta-02" src="assets/images/horta-02.png" alt="Rega de Plantas"><p>Sistema de Irrigação</p></li>
+                            <li><img id="imagem-horta-03" src="assets/images/horta-03.png" alt="Solo Fertile"><p>Preparação do Solo</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Benefícios Educacionais</h4>
+                        <ul>
+                            <li><img id="imagem-horta-04" src="assets/images/horta-04.png" alt="Crianças Aprendendo"><p>Aprendizado Prático</p></li>
+                            <li><img id="imagem-horta-05" src="assets/images/horta-05.png" alt="Trabalho em Equipe"><p>Colaboração</p></li>
+                            <li><img id="imagem-horta-06" src="assets/images/horta-06.png" alt="Crescimento de Plantas"><p>Ciência na Prática</p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Impacto Social</h4>
+                        <ul>
+                            <li><img id="imagem-horta-07" src="assets/images/horta-07.png" alt="Comunidade Compartilhando Alimentos"><p>Alimentos Frescos</p></li>
+                            <li><img id="imagem-horta-08" src="assets/images/horta-08.png" alt="Conscientização"><p>Conscientização</p></li>
+                            <li><img id="imagem-horta-09" src="assets/images/horta-09.png" alt="Meio Ambiente"><p>Sustentabilidade</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Cinco - "Quinta Seção" -->
+        <section id="secao-cinco" class="quinta-secao">
+            <div class="quinta-secao__conteudo">
+                <h2>Galeria de Projetos</h2>
+                <h3>Conheça outros projetos que celebram a conexão campo-cidade.</h3>
+                <ul class="quinta-secao__conteudo__lista-projetos">
+                    <li>
+                        <img src="assets/images/projeto-01.png" alt="Projeto Comunidade Verde">
+                        <div>
+                            <span>2024</span>
+                            <h4>Comunidade Verde</h4>
+                            <p>Um projeto que incentiva a criação de espaços verdes e hortas comunitárias em áreas urbanas, promovendo a integração e o bem-estar dos moradores.</p>
+                            <a href="#">Ver Projeto</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/projeto-02.png" alt="Projeto Sabores da Terra">
+                        <div>
+                            <span>2023</span>
+                            <h4>Sabores da Terra</h4>
+                            <p>Iniciativa que conecta pequenos produtores rurais com restaurantes e consumidores na cidade, valorizando produtos orgânicos e regionais.</p>
+                            <a href="#">Ver Projeto</a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/images/projeto-03.png" alt="Projeto Rota Sustentável">
+                        <div>
+                            <span>2022</span>
+                            <h4>Rota Sustentável</h4>
+                            <p>Um programa de turismo rural que oferece experiências educativas em fazendas e sítios, aproximando os visitantes do universo do campo.</p>
+                            <a href="#">Ver Projeto</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Seis - "Sexta Seção" -->
+        <section id="secao-seis" class="sexta-secao">
+            <div class="sexta-secao__conteudo">
+                <h2>Impacto e Legado</h2>
+                <h4>A importância do nosso trabalho</h4>
+                <p>
+                    Nosso projeto busca deixar um legado de conscientização e ação para as futuras gerações. Acreditamos que a valorização da conexão entre o campo e a cidade é fundamental para o desenvolvimento sustentável e a qualidade de vida de todos. Contribuímos para a formação de cidadãos mais conscientes e engajados com o meio ambiente e a produção de alimentos.
+                </p>
+                <p>
+                    Com as informações e iniciativas apresentadas, esperamos inspirar outros a participar ativamente dessa grande conexão que sustenta nossa sociedade.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="contato-secao">
+            <div class="footer__conteudo">
+                <div>
+                    <h2>Fale Conosco</h2>
+                </div>
+                <form>
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Botão Volta ao Início -->
+    <a href="#secao-um" class="botao-volta-inicio">↑</a>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer__conteudo">
+            <div>
+                <h2>Meu Projeto Agrinho</h2>
+            </div>
+            <form>
+                <input type="email" placeholder="Seu Email" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+            <p>&copy; 2025 Meu Projeto Agrinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
